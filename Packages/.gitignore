@@ -1,0 +1,788 @@
+Last login: Mon Aug 19 16:31:41 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) MacBook-Pro:~ genevievecomer-kleine1$ cd Desktop/"Terrain Prototype"
+(base) MacBook-Pro:Terrain Prototype genevievecomer-kleine1$ git
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+(base) MacBook-Pro:Terrain Prototype genevievecomer-kleine1$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.vs/
+	Assembly-CSharp-Editor.csproj
+	Assembly-CSharp.csproj
+	Assets/
+	FFmpegOut.Editor.csproj
+	FFmpegOut.csproj
+	GraphQLClient.Editor.Tests.csproj
+	GraphQLClient.Editor.csproj
+	GraphQLClient.csproj
+	Hjg.Pngcs.csproj
+	Library/
+	Logs/
+	LookingGlass.Demos.csproj
+	LookingGlass.Editor.csproj
+	LookingGlass.csproj
+	Packages/
+	ProjectSettings/
+	Temp/
+	Terrain Prototype.sln
+	Unity.Postprocessing.Editor.Tests.csproj
+	Unity.Postprocessing.Editor.csproj
+	Unity.Postprocessing.Runtime.Tests.csproj
+	Unity.Postprocessing.Runtime.csproj
+	UserSettings/
+	WebSocketSharp.csproj
+	obj/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) MacBook-Pro:Terrain Prototype genevievecomer-kleine1$ git add /
+fatal: /: '/' is outside repository at '/Users/genevievecomer-kleine1/Desktop/Terrain Prototype'
+(base) MacBook-Pro:Terrain Prototype genevievecomer-kleine1$ git add --all
+warning: in the working copy of 'Assembly-CSharp-Editor.csproj', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assembly-CSharp.csproj', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Materials.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Materials/Cold.mat', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Materials/Cold.mat.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Materials/Dry.mat', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Materials/Dry.mat.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Materials/Fall.mat', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Materials/Fall.mat.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Materials/Normal.mat.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type0 01.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type0 01.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type0 02.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type0 02.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type0 03.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type0 03.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type0 04.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type0 04.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type0 05.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type0 05.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type0 06.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type0 06.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type1 01.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type1 01.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type1 02.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type1 02.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type1 03.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type1 03.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type1 04.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type1 04.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type1 05.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type1 05.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type2 01.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type2 01.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type2 02.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type2 02.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type2 03.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type2 03.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type2 04.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type2 04.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type2 05.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type2 05.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type3 01.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type3 01.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type3 02.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type3 02.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type3 03.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type3 03.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type3 04.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type3 04.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type3 05.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type3 05.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type4 01.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type4 01.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type4 02.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type4 02.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type4 03.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type4 03.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type4 04.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type4 04.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type4 05.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type4 05.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type5 01.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type5 01.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type5 02.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type5 02.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type5 03.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type5 03.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type5 04.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type5 04.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type6 01.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type6 01.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type6 02.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type6 02.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type6 03.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type6 03.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type6 04.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type6 04.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type7 01.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type7 01.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type7 02.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type7 02.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type7 03.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type7 03.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type7 04.dae', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Models/Tree Type7 04.dae.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type0 01.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type0 01.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type0 02.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type0 02.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type0 03.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type0 03.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type0 04.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type0 04.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type0 05.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type0 05.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type0 06.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type0 06.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type1 01.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type1 01.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type1 02.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type1 02.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type1 03.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type1 03.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type1 04.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type1 04.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type1 05.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type1 05.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type2 01.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type2 01.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type2 02.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type2 02.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type2 03.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type2 03.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type2 04.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type2 04.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type2 05.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type2 05.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type3 01.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type3 01.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type3 02.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type3 02.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type3 03.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type3 03.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type3 04.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type3 04.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type3 05.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type3 05.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type4 01.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type4 01.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type4 02.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type4 02.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type4 03.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type4 03.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type4 04.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type4 04.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type4 05.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type4 05.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type5 01.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type5 01.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type5 02.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type5 02.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type5 03.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type5 03.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type5 04.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type5 04.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type6 01.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type6 01.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type6 02.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type6 02.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type6 03.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type6 03.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type6 04.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type6 04.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type7 01.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type7 01.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type7 02.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type7 02.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type7 03.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type7 03.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type7 04.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Prefabs/Tree Type7 04.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/README.txt', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/README.txt.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/BrokenVector/LowPolyTreePack/Textures.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Assets/Stylized NPC - Peasant Nolant/README.txt', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'FFmpegOut.Editor.csproj', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'FFmpegOut.csproj', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'GraphQLClient.Editor.Tests.csproj', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'GraphQLClient.Editor.csproj', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'GraphQLClient.csproj', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Hjg.Pngcs.csproj', CRLF will be replaced by LF the next time Git touches it
+
+
+
+
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/.signature', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/CHANGELOG.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/CHANGELOG.md.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/AboutAgents.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/AboutHeightMesh.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/AboutObstacles.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/AreasAndCosts.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/CouplingAnimationAndNavigation.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/CreateNavMesh.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/CreateNavMeshAgent.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/CreateNavMeshObstacle.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/CreateOffMeshLink.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Glossary.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/HeightMesh.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/AutoOffMeshLinksParams.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/AutoOffMeshLinksSetup.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshAgentOffset.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshAgentSetup.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshAreaMask.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshAreaType.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshAsset.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshHeightMesh.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshLoadAdditiveDiagram.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshLoadAdditiveTrouble.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshMinRegion.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshNodePositions.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshObstacleCarving.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshObstacleSetup.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshObstacleTrap.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshUnderstandingAreas.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshUnderstandingAvoid.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshUnderstandingCarve.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshUnderstandingCorridor.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshUnderstandingLoop.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshUnderstandingMove.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshUnderstandingOffmesh.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshUnderstandingPath.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavMeshVoxelSize.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/NavPatrolMaze.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/OffMeshLinkDebug.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Images/OffMeshLinkSetup.svg', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/MixingComponents.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/NavAgentPatrol.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/NavEditorPreferences.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/NavHowTos.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/NavInnerWorkings.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/NavMeshAgent.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/NavMeshBuildingComponents.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/NavMeshLink.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/NavMeshModifier.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/NavMeshModifierVolume.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/NavMeshObstacle.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/NavMeshSurface.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/NavMoveToClickPoint.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/NavMoveToDestination.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/NavigationOverlay.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/NavigationOverview.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/NavigationSystem.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/NavigationWindow.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/OffMeshLink.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Reference.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/Samples.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/TableOfContents.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/UpgradeGuide.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/config.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/filter.yml', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/index.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Documentation~/whats-new.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/AssemblyInfo.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/AssemblyInfo.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/ConverterItemDescriptor.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/ConverterItemDescriptor.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/ConverterItemInfo.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/ConverterItemInfo.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/EditorStyles.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/EditorStyles.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/InitializeConverterContext.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/InitializeConverterContext.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/RunItemContext.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/RunItemContext.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/SystemConverter.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/SystemConverter.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/SystemConverterContainer.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/SystemConverterContainer.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/SystemConvertersEditor.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/SystemConvertersEditor.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/Unity.AI.Navigation.Editor.ConversionSystem.asmdef', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/Unity.AI.Navigation.Editor.ConversionSystem.asmdef.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/converter_editor.uss', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/converter_editor.uss.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/converter_editor.uxml', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/converter_editor.uxml.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/converter_widget.uss.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/converter_widget.uxml', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/converter_widget.uxml.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/converter_widget_item.uxml', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/converter_widget_item.uxml.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/NavMeshAssetManager.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/NavMeshAssetManager.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/NavMeshComponentsGUIUtility.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/NavMeshComponentsGUIUtility.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/NavMeshLinkEditor.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/NavMeshLinkEditor.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/NavMeshModifierEditor.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/NavMeshModifierEditor.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/NavMeshModifierVolumeEditor.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/NavMeshModifierVolumeEditor.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/NavMeshSurfaceEditor.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/NavMeshSurfaceEditor.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/NavigationOverlay.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/NavigationOverlay.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/NavigationPreferences.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/NavigationPreferences.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/NavigationWindow.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/NavigationWindow.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ObsoleteNavigationWindowMenuEntry.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ObsoleteNavigationWindowMenuEntry.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/Unity.AI.Navigation.Editor.asmdef', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/Unity.AI.Navigation.Editor.asmdef.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/Updater.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/Updater/AssemblyInfo.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/Updater/AssemblyInfo.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/Updater/BuiltInToNavMeshSurfaceConverterContainer.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/Updater/BuiltInToNavMeshSurfaceConverterContainer.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/Updater/NavMeshSceneConverter.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/Updater/NavMeshSceneConverter.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/Updater/NavMeshUpdaterEditor.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/Updater/NavMeshUpdaterEditor.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/Updater/NavMeshUpdaterUtility.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/Updater/NavMeshUpdaterUtility.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/Updater/Unity.AI.Navigation.Updater.asmdef', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/Updater/Unity.AI.Navigation.Updater.asmdef.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/NavigationWindowIcon.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/NavigationOverlay On.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/NavigationOverlay On@128.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/NavigationOverlay On@16.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/NavigationOverlay On@256.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/NavigationOverlay On@2x.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/NavigationOverlay On@32.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/NavigationOverlay On@64.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/NavigationOverlay.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/NavigationOverlay@128.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/NavigationOverlay@16.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/NavigationOverlay@256.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/NavigationOverlay@2x.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/NavigationOverlay@32.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/NavigationOverlay@64.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/d_NavigationOverlay On.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/d_NavigationOverlay On@128.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/d_NavigationOverlay On@16.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/d_NavigationOverlay On@256.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/d_NavigationOverlay On@2x.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/d_NavigationOverlay On@32.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/d_NavigationOverlay On@64.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/d_NavigationOverlay.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/d_NavigationOverlay@128.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/d_NavigationOverlay@16.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/d_NavigationOverlay@256.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/d_NavigationOverlay@2x.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/d_NavigationOverlay@32.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/Overlay/d_NavigationOverlay@64.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/EditorResources/d_NavigationWindowIcon.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Gizmos.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Gizmos/NavMeshLink Icon.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Gizmos/NavMeshModifier Icon.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Gizmos/NavMeshModifierVolume Icon.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Gizmos/NavMeshSurface Icon.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/LICENSE.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/LICENSE.md.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/README.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/README.md.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Runtime.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Runtime/HelpUrls.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Runtime/HelpUrls.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Runtime/NavMeshLink.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Runtime/NavMeshLink.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Runtime/NavMeshModifier.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Runtime/NavMeshModifier.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Runtime/NavMeshModifierVolume.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Runtime/NavMeshModifierVolume.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Runtime/NavMeshSurface.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Runtime/NavMeshSurface.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Runtime/Unity.AI.Navigation.asmdef', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Runtime/Unity.AI.Navigation.asmdef.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/.sample.json', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Cube.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Cube.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Materials.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Materials/brightgreen.mat', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Materials/brightgreen.mat.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Materials/brown.mat', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Materials/brown.mat.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Materials/crosshair.mat', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Materials/crosshair.mat.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Materials/floor.mat', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Materials/floor.mat.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Materials/green.mat', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Materials/green.mat.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Materials/grey.mat', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Materials/grey.mat.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Materials/modify_crosshair.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Materials/red.mat', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Materials/red.mat.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Materials/yellow.mat', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Materials/yellow.mat.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Models.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Models/heightmesh.obj', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Models/heightmesh.obj.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/NavigationSampleSettingsState.asset', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/NavigationSampleSettingsState.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/BanyanTree.fbx.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/BanyanTree.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/BanyanTree.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile0.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile0.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile1.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile1.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile10.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile10.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile11.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile11.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile12.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile12.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile13.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile13.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile14.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile14.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile15.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile15.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile2.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile2.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile3.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile3.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile4.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile4.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile5.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile5.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile6.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile6.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile7.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile7.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile8.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile8.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile9.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/DungeonTiles/Tile9.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/GroundTile.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/GroundTile.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/Materials.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/Materials/BanyanBark.mat', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/Materials/BanyanBark.mat.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/Materials/BanyanBranches.mat', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/Materials/BanyanBranches.mat.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/Plank.prefab', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Prefabs/Plank.prefab.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/README.md', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/README.md.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/1_multiple_agent_sizes.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/1_multiple_agent_sizes.unity', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/1_multiple_agent_sizes.unity.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/1_multiple_agent_sizes/NavMesh-Geometry 1.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/1_multiple_agent_sizes/NavMesh-Geometry.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/2_drop_plank.unity', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/2_drop_plank.unity.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/2_drop_plankSettings.lighting', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/2_drop_plankSettings.lighting.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/3_free_orientation.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/3_free_orientation.unity', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/3_free_orientation.unity.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/3_free_orientation/NavMesh-TiltedPlane.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/3_free_orientationSettings.lighting', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/3_free_orientationSettings.lighting.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/4_sliding_window_infinite.unity', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/4_sliding_window_infinite.unity.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/5_sliding_window_terrain.unity', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/5_sliding_window_terrain.unity.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/5_sliding_window_terrainSettings.lighting', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/5_sliding_window_terrainSettings.lighting.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/6_modify_mesh.unity', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/6_modify_mesh.unity.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/6_modify_meshSettings.lighting', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/6_modify_meshSettings.lighting.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/7_dungeon.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/7_dungeon.unity', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/7_dungeon.unity.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/7_dungeon/NavMesh-Tile0.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/7_dungeon/NavMesh-Tile1.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/7_dungeon/NavMesh-Tile10.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/7_dungeon/NavMesh-Tile11.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/7_dungeon/NavMesh-Tile12.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/7_dungeon/NavMesh-Tile13.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/7_dungeon/NavMesh-Tile14.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/7_dungeon/NavMesh-Tile15.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/7_dungeon/NavMesh-Tile2.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/7_dungeon/NavMesh-Tile3.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/7_dungeon/NavMesh-Tile4.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/7_dungeon/NavMesh-Tile5.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/7_dungeon/NavMesh-Tile6.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/7_dungeon/NavMesh-Tile7.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/7_dungeon/NavMesh-Tile8.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/7_dungeon/NavMesh-Tile9.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/8_heightmesh.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/8_heightmesh.unity', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/8_heightmesh.unity.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/8_heightmesh/NavMesh-With-HeightMesh.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scenes/8_heightmesh/NavMesh-Without-HeightMesh.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/AgentLinkMover.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/AgentLinkMover.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/ClickToMove.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/ClickToMove.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/Despawner.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/Despawner.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/DestroyOnTrigger.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/DestroyOnTrigger.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/DungeonManager.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/DungeonManager.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/DynamicNavMeshObject.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/DynamicNavMeshObject.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/EnableIffSleeping.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/EnableIffSleeping.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/FreeCam.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/FreeCam.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/GloballyUpdatedNavMeshSurface.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/GloballyUpdatedNavMeshSurface.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/MeshTool.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/MeshTool.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/NavMeshSurfaceVolumeUpdater.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/NavMeshSurfaceVolumeUpdater.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/NavigationLoop.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/NavigationLoop.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/Oscillator.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/Oscillator.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/ProjectSettingsUtilities.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/ProjectSettingsUtilities/Editor.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/ProjectSettingsUtilities/Editor/NavigationSampleProjectSettingsGenerator.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/ProjectSettingsUtilities/Editor/NavigationSampleProjectSettingsGenerator.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/ProjectSettingsUtilities/Editor/NavigationSampleSettingsState.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/ProjectSettingsUtilities/Editor/NavigationSampleSettingsState.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/ProjectSettingsUtilities/Editor/Unity.AI.Navigation.Samples.Initialization.Editor.asmdef', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/ProjectSettingsUtilities/Editor/Unity.AI.Navigation.Samples.Initialization.Editor.asmdef.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/ProjectSettingsUtilities/NavigationSampleInitializer.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/ProjectSettingsUtilities/NavigationSampleInitializer.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/RandomInstancing.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/RandomInstancing.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/RandomWalk.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/RandomWalk.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/SpawnPrefabOnKeyDown.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Scripts/SpawnPrefabOnKeyDown.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Terrains.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Terrains/Islands.asset.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Terrains/LightmapWithFog.png.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Terrains/layer_LightmapWithFog(2048.000,2048.000)(0.000,0.000)(0.000,0.000,0.000),0.000,0.000.terrainlayer', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Terrains/layer_LightmapWithFog(2048.000,2048.000)(0.000,0.000)(0.000,0.000,0.000),0.000,0.000.terrainlayer.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Unity.AI.Navigation.Samples.asmdef', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Samples~/Unity.AI.Navigation.Samples.asmdef.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor/Converter.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor/Converter/ConverterTests.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor/Converter/ConverterTests.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor/NavMeshModifierVolumeInPrefabTests.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor/NavMeshModifierVolumeInPrefabTests.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor/NavMeshSurfaceInPrefabTests.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor/NavMeshSurfaceInPrefabTests.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor/NavMeshSurfaceInPrefabVariantTests.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor/NavMeshSurfaceInPrefabVariantTests.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor/NavigationPresenceInMenus.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor/NavigationPresenceInMenus.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor/PrefabSavingUtil.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor/PrefabSavingUtil.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor/PrefabStageAutoSavingUtil.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor/PrefabStageAutoSavingUtil.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor/TestUtility.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor/TestUtility.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor/Unity.AI.Navigation.Editor.Tests.asmdef', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Editor/Unity.AI.Navigation.Editor.Tests.asmdef.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Runtime.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Runtime/NavMeshSurfaceAgentTests.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Runtime/NavMeshSurfaceAgentTests.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Runtime/NavMeshSurfaceLinkTests.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Runtime/NavMeshSurfaceLinkTests.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Runtime/NavMeshSurfaceModifierTests.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Runtime/NavMeshSurfaceModifierTests.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Runtime/NavMeshSurfaceModifierVolumeTests.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Runtime/NavMeshSurfaceModifierVolumeTests.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Runtime/NavMeshSurfaceTests.cs', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Runtime/NavMeshSurfaceTests.cs.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Runtime/Unity.AI.Navigation.Tests.asmdef', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/Tests/Runtime/Unity.AI.Navigation.Tests.asmdef.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.ai.navigation@1.1.5/package.json.meta', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'Library/PackageCache/com.unity.collab-proxy@2.4.4/.signature', CRLF will be replaced by LF the next time Git touches it
+git-lfs filter-process: git-lfs: command not found
+fatal: the remote end hung up unexpectedly
+(base) MacBook-Pro:Terrain Prototype genevievecomer-kleine1$ 
+(base) MacBook-Pro:Terrain Prototype genevievecomer-kleine1$ 
+(base) MacBook-Pro:Terrain Prototype genevievecomer-kleine1$ 
+(base) MacBook-Pro:Terrain Prototype genevievecomer-kleine1$ 
+(base) MacBook-Pro:Terrain Prototype genevievecomer-kleine1$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.vs/
+	Assembly-CSharp-Editor.csproj
+	Assembly-CSharp.csproj
+	Assets/
+	FFmpegOut.Editor.csproj
+	FFmpegOut.csproj
+	GraphQLClient.Editor.Tests.csproj
+	GraphQLClient.Editor.csproj
+	GraphQLClient.csproj
+	Hjg.Pngcs.csproj
+	Library/
+	Logs/
+	LookingGlass.Demos.csproj
+	LookingGlass.Editor.csproj
+	LookingGlass.csproj
+	Packages/
+	ProjectSettings/
+	Temp/
+	Terrain Prototype.sln
+	Unity.Postprocessing.Editor.Tests.csproj
+	Unity.Postprocessing.Editor.csproj
+	Unity.Postprocessing.Runtime.Tests.csproj
+	Unity.Postprocessing.Runtime.csproj
+	UserSettings/
+	WebSocketSharp.csproj
+	obj/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) MacBook-Pro:Terrain Prototype genevievecomer-kleine1$ nano .gitignore
+(base) MacBook-Pro:Terrain Prototype genevievecomer-kleine1$ ls
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj
+Assets
+FFmpegOut.Editor.csproj
+FFmpegOut.csproj
+GraphQLClient.Editor.Tests.csproj
+GraphQLClient.Editor.csproj
+GraphQLClient.csproj
+Hjg.Pngcs.csproj
+Library
+Logs
+LookingGlass.Demos.csproj
+LookingGlass.Editor.csproj
+LookingGlass.csproj
+Packages
+ProjectSettings
+Temp
+Terrain Prototype.sln
+Unity.Postprocessing.Editor.Tests.csproj
+Unity.Postprocessing.Editor.csproj
+Unity.Postprocessing.Runtime.Tests.csproj
+Unity.Postprocessing.Runtime.csproj
+UserSettings
+WebSocketSharp.csproj
+obj
+(base) MacBook-Pro:Terrain Prototype genevievecomer-kleine1$ nano .gitignore
+(base) MacBook-Pro:Terrain Prototype genevievecomer-kleine1$ ls
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj
+Assets
+FFmpegOut.Editor.csproj
+FFmpegOut.csproj
+GraphQLClient.Editor.Tests.csproj
+GraphQLClient.Editor.csproj
+GraphQLClient.csproj
+Hjg.Pngcs.csproj
+Library
+Logs
+LookingGlass.Demos.csproj
+LookingGlass.Editor.csproj
+LookingGlass.csproj
+Packages
+ProjectSettings
+Temp
+Terminal Saved Output
+Terrain Prototype.sln
+Unity.Postprocessing.Editor.Tests.csproj
+Unity.Postprocessing.Editor.csproj
+Unity.Postprocessing.Runtime.Tests.csproj
+Unity.Postprocessing.Runtime.csproj
+UserSettings
+WebSocketSharp.csproj
+obj
+(base) MacBook-Pro:Terrain Prototype genevievecomer-kleine1$ nano .gitignore
+
+  UW PICO 5.09                        File: .gitignore                          
+
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+
+# Unity generated files
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Pg   ^K Cut Text  ^C Cur Pos   
+^X Exit      ^J Justify   ^W Where is  ^V Next Pg   ^U UnCut Text^T To Spell  
