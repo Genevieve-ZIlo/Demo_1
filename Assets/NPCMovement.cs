@@ -3,10 +3,9 @@ using UnityEngine.AI;
 
 public class NPCMovement : MonoBehaviour
 {
-    public float speed = 2f;            // Movement speed
-    public float wanderRadius = 10f;    // Radius within which the NPC will wander
-    public float wanderInterval = 3f;   // Time between each wander movement
-
+    public float speed = 2f;            
+    public float wanderRadius = 10f;    
+    public float wanderInterval = 3f;   
     private NavMeshAgent agent;
     private Animator animator;
     private float timer;
