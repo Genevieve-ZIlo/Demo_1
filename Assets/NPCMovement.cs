@@ -41,7 +41,8 @@ public class NPCMovement : MonoBehaviour
             // Update the Animator's Trigger parameter based on agent's velocity
             if (animator != null)
             {
-                if (agent.velocity.magnitude > 0.1f) // NPC is moving
+                // NPC is moving
+                if (agent.velocity.magnitude > 0.1f) 
                 {
                     animator.SetTrigger("IsWalking");
                 }
